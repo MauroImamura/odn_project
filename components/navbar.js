@@ -1,9 +1,15 @@
+import Link from 'next/link';
+
 export default function Navbar(){
     return(
         <div class="navbar">
             <div>ODN PROJECT</div>
-            <a href="/about">ABOUT</a>
-            <a href="/">HOME</a>
+            <Link href="/about">
+                <a>ABOUT</a>
+            </Link>
+            <Link href="/">
+                <a>HOME</a>
+            </Link>
         </div>
     )
 }
