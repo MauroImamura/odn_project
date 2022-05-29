@@ -4,22 +4,28 @@ function Home(){
     return (
         <div>
             <div>
-                <h1>Welcome to ODN PROJECT</h1>
-                <Content />
+                <h1 class="main-title">Welcome to ODN PROJECT</h1>
+                <br/>
+                <p class="description" word-wrap break-word>
+                    <DescriptionText />
+                </p>
+                <br/>
             </div>
             <div>
-                <h3>Page list:</h3>
-                <ul>
+                <h3>List of Contents:</h3>
+                <ul class="list-of-contents">
                     <li>
-                        <Link href="https://mauroimamura.github.io/jumpin_game/" target="_blank">
-                            <a>Jumpin Game!</a> on github page.
+                        <a href="https://mauroimamura.github.io/jumpin_game/" target="_blank">Jumpin Game!</a> on github page.
+                    </li>
+                    <li>
+                        <Link href="/canvas">
+                            <a>Canvas animation</a>
                         </Link>
                     </li>
-                    <li href="/about">
-                        <a>About</a>
-                    </li>
-                    <li href="/scroll_down">
-                        <a>Scroll Page</a>
+                    <li>
+                        <Link href="/scroll_down">
+                            <a>Scroll Page</a>
+                        </Link>
                     </li>
                 </ul>
             </div>
@@ -27,9 +33,9 @@ function Home(){
     )
 }
 
-function Content(){
-    let desc = "Page under development."
-    return <div>{desc}</div>
+function DescriptionText(){
+    let description_text = "This is a basic javascript project to test and show some features related to web applications.";
+    return description_text
 }
 
 export default Home
