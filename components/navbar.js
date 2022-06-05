@@ -6,15 +6,19 @@ export default function Navbar(){
     return(
         <div class="navbar">
             <div>
-                <Image 
-                    width="200"
-                    height="60" 
-                    src={logo}/>
+                <Link href="/">
+                    <a>
+                    <Image
+                        width="200"
+                        height="60" 
+                        src={logo}/>
+                    </a>
+                </Link>
                 <Link href="/about">
-                    <a>ABOUT</a>
+                    <a class="nav-link">ABOUT</a>
                 </Link>
                 <Link href="/">
-                    <a>HOME</a>
+                    <a class="nav-link">HOME</a>
                 </Link>
             </div>
         </div>

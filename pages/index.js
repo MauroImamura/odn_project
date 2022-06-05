@@ -6,7 +6,7 @@ function Home(){
             <div>
                 <h1 class="main-title">Welcome to ODN PROJECT</h1>
                 <br/>
-                <p class="description" word-wrap break-word>
+                <p role="description" class="description" word-wrap break-word>
                     <DescriptionText />
                 </p>
                 <br/>
@@ -17,11 +17,11 @@ function Home(){
                     <li>
                         <a href="https://mauroimamura.github.io/jumpin_game/" target="_blank">Jumpin Game!</a> on github page.
                     </li>
-                    <li>
+                    {/* <li>
                         <Link href="/canvas">
                             <a>Canvas animation</a>
                         </Link>
-                    </li>
+                    </li> */}
                     <li>
                         <Link href="/scroll_down">
                             <a>Scroll Page</a>

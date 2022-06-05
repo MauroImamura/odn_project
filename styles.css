@@ -25,7 +25,8 @@ p{
     font-size: 15px;
 }
 .navbar{
-    position: relative;
+    position:sticky;
+    z-index: 1;
     left: 0;
     top: 0;
     width: 100%;
@@ -33,7 +34,7 @@ p{
     background-color: #2f3949;
     color:white;
 }
-.navbar a{
+.navbar .nav-link{
     float: right;
     text-align: center;
     padding: 14px 16px;
@@ -52,12 +53,19 @@ p{
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 20px;
+    height: 40px;
     background-color: rgb(70, 110, 167);
     color:white;
-    text-align: center;
+    text-align: right;
+    font-size: 12px;
 }
-
+.footer .flex-container{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.footer a{
+    padding: 5px
+}
 .top-to-btm{
     position: relative;
   }
